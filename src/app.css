@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body {
+		background-color: theme('colors.blue-gray');
+		background-image: url('rainbow-logo-bg.png');
+		background-repeat: no-repeat;
+		background-size: 22rem;
+		background-position-x: -60px;
+		background-position-y: 20px;
+	}
+}
