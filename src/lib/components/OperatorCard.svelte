@@ -13,7 +13,7 @@
 </script>
 
 <div
-	class="relative bg-card-background flex flex-col text-center justify-center w-full rounded-lg cursor-pointer py-8"
+	class="operator-card relative bg-card-background flex flex-col text-center justify-center w-full rounded-lg cursor-pointer py-8"
 >
 	<div>
 		<img
