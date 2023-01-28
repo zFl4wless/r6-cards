@@ -1,20 +1,27 @@
-<script>
+<script lang="ts">
 	import '../app.css';
 	import { Search } from 'lucide-svelte';
+	import { operators } from '../lib/data/operators';
+	import OperatorCard from '../lib/components/OperatorCard.svelte';
 </script>
 
 <main class="m-6">
-	<div>
-		<!-- Search Bar -->
-		<div class="flex bg-dark px-4 py-3 rounded-lg">
-			<input
-				class="bg-transparent text-light text-base w-full focus:outline-none"
-				placeholder="Search an Operator"
-				type="text"
-			/>
-			<div class="bg-light p-1 rounded-md shadow-glow">
-				<Search size={20} class="text-dark" />
-			</div>
+	<!-- Search Bar -->
+	<div class="flex bg-dark px-4 py-3 rounded-lg">
+		<input
+			class="bg-transparent text-light text-base w-full focus:outline-none"
+			placeholder="Search an Operator"
+			type="text"
+		/>
+		<div class="bg-light p-1 rounded-md shadow-glow">
+			<Search size={20} class="text-dark" />
 		</div>
+	</div>
+
+	<!-- Operator List -->
+	<div class="flex flex-wrap justify-center gap-x-6 gap-y-28 my-28">
+		{#each operators as operator}
+			<OperatorCard {...operator} />
+		{/each}
 	</div>
 </main>

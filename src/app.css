@@ -1,14 +1,20 @@
+@font-face {
+	font-family: 'Inter';
+	src: url('/font/Inter.ttf');
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
 	body {
+		color: theme('colors.light');
 		background-color: theme('colors.blue-gray');
 		background-image: url('rainbow-logo-bg.png');
 		background-repeat: no-repeat;
 		background-size: 22rem;
-		background-position-x: -60px;
+		background-position-x: -65px;
 		background-position-y: 20px;
 	}
 }

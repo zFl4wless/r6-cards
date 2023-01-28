@@ -3,9 +3,12 @@ module.exports = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
 		extend: {
+			backgroundImage: {
+				'card-background': 'linear-gradient(to top, #131619 0%, #131619 75%, transparent 100%)'
+			},
 			colors: {
-				attacker: '#0078D1',
-				defender: '#DD5701',
+				attack: '#0078D1',
+				defense: '#DD5701',
 				light: '#F2F2F2',
 				dark: '#131619',
 				'gray-bege': '#8C8581',
@@ -16,6 +19,9 @@ module.exports = {
 			boxShadow: {
 				glow: '0 0 10px 0 #F2F2F2'
 			}
+		},
+		fontFamily: {
+			inter: ['Inter', 'sans-serif']
 		}
 	},
 	plugins: []

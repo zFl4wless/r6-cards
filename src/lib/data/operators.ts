@@ -60,9 +60,9 @@ export const operators = [
     organization: 'JTF2'
   },
   {
-    name: 'Capitão',
-    badge: '/operator-badges/capitãobadge.png',
-    image: '/operator-profiles/capitão.png',
+    name: 'Capitao',
+    badge: '/operator-badges/capitaobadge.png',
+    image: '/operator-profiles/capitao.png',
     bio: "Vincente Souza grew up in Nova Iguaçu outside of Rio de Janeiro, the youngest of three children. Tenacious and dedicated, Souza joined the Policia Civil after high school. He was quickly recruited by Cooredenadoria de Recursos Especiais (CORE). Soon after BOPE made him an offer, seeing in him their unit's spirit, 'victory over death'. Souza could not turn them down; it meant working in the favela where his gear would lessen casualties.",
     armor_rating: 1,
     speed_rating: 3,
