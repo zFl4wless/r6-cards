@@ -1,2 +1,20 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import '../app.css';
+	import { Search } from 'lucide-svelte';
+</script>
+
+<main class="m-6">
+	<div>
+		<!-- Search Bar -->
+		<div class="flex bg-dark px-4 py-3 rounded-lg">
+			<input
+				class="bg-transparent text-light text-base w-full focus:outline-none"
+				placeholder="Search an Operator"
+				type="text"
+			/>
+			<div class="bg-light p-1 rounded-md shadow-glow">
+				<Search size={20} class="text-dark" />
+			</div>
+		</div>
+	</div>
+</main>

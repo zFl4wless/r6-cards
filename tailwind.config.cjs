@@ -12,6 +12,9 @@ module.exports = {
 				'light-gray': '#A5A7AA',
 				'blue-gray': '#1F242A',
 				'dark-gray': '#16191D'
+			},
+			boxShadow: {
+				glow: '0 0 10px 0 #F2F2F2'
 			}
 		}
 	},
