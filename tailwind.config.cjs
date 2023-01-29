@@ -9,6 +9,7 @@ module.exports = {
 			colors: {
 				attack: '#0078D1',
 				defense: '#DD5701',
+				danger: '#DE1738',
 				light: '#F2F2F2',
 				dark: '#131619',
 				'gray-bege': '#8C8581',

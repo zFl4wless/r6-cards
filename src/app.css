@@ -18,3 +18,10 @@
 		background-position-y: 20px;
 	}
 }
+
+.bg-defense {
+	background-color: theme('colors.defense');
+}
+.bg-attack {
+	background-color: theme('colors.attack');
+}
