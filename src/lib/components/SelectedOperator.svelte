@@ -9,7 +9,7 @@
 
 {#if selectedOperator}
 	<div
-		class="flex flex-col text-center justify-center fixed top-0 left-0 w-full h-full bg-{selectedOperator.type} z-10"
+		class="flex xl:hidden flex-col text-center justify-center fixed top-0 left-0 w-full h-full bg-{selectedOperator.type} z-10"
 	>
 		<button
 			class="absolute top-2 right-2 bg-dark p-1 rounded-md"
@@ -19,7 +19,7 @@
 		</button>
 	</div>
 
-	<div class="fixed bottom-0 left-0 w-full h-[80vh] rounded-t-lg bg-dark z-20">
+	<div class="fixed bottom-0 left-0 xl:left-auto xl:right-0 xl:mr-6 w-full xl:w-[28.5rem] h-[80vh] rounded-t-lg bg-dark z-20">
 		<img
 			class="absolute -top-28 left-1/2 -translate-x-1/2"
 			src={selectedOperator.image}
@@ -60,5 +60,18 @@
 				/>
 			</div>
 		</div>
+	</div>
+{:else}
+	<div
+		class="hidden xl:flex items-center justify-center fixed bottom-0 right-0 mr-6 w-[28.5rem] h-[80vh] rounded-t-lg bg-dark z-20"
+	>
+		<img
+			class="absolute -top-28 left-1/2 -translate-x-1/2"
+			src="operator-placeholder.png"
+			alt="Placeholder for the selected operator"
+			width={280}
+		/>
+
+		<p class="w-40 text-gray-bege text-center">Select an operator to display it here</p>
 	</div>
 {/if}

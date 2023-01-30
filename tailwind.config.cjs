@@ -19,6 +19,9 @@ module.exports = {
 			},
 			boxShadow: {
 				glow: '0 0 10px 0 #F2F2F2'
+			},
+			screens: {
+				xl: '1440px'
 			}
 		},
 		fontFamily: {

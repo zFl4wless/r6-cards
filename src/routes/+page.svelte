@@ -15,14 +15,16 @@
 </script>
 
 <main class="m-6">
-	<!-- Search Bar -->
-	<OperatorSearchBar bind:search />
+	<div class="xl:mr-[30rem]">
+		<!-- Search Bar -->
+		<OperatorSearchBar bind:search />
 
-	<!-- Operator List -->
-	<div class="flex flex-wrap justify-center gap-x-6 gap-y-28 my-28">
-		{#each filteredOperators as operator}
-			<OperatorCard {...operator} bind:selectedOperator />
-		{/each}
+		<!-- Operator List -->
+		<div class="flex flex-wrap justify-center gap-x-6 gap-y-28 my-28">
+			{#each filteredOperators as operator}
+				<OperatorCard {...operator} bind:selectedOperator />
+			{/each}
+		</div>
 	</div>
 
 	<!-- Selected Operator -->
