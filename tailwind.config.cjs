@@ -20,6 +20,9 @@ module.exports = {
 			boxShadow: {
 				glow: '0 0 10px 0 #F2F2F2'
 			},
+			animation: {
+				'reverse-spin': 'reverse-spin 1s linear infinite'
+			},
 			screens: {
 				xl: '1440px'
 			}

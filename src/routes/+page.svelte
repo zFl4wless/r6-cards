@@ -4,6 +4,15 @@
 	import OperatorCard from '../lib/components/OperatorCard.svelte';
 	import OperatorSearchBar from '$lib/components/OperatorSearchBar.svelte';
 	import SelectedOperator from '$lib/components/SelectedOperator.svelte';
+	import SplashScreen from '$lib/components/SplashScreen.svelte';
+	import { onMount } from 'svelte';
+
+	let showSplashScreen: boolean;
+	$: showSplashScreen = true;
+
+	onMount(() => {
+		showSplashScreen = false;
+	});
 
 	let search: string = '';
 	$: filteredOperators = search
@@ -15,6 +24,8 @@
 </script>
 
 <main class="m-6">
+	<SplashScreen {showSplashScreen} />
+
 	<div class="xl:mr-[30rem]">
 		<!-- Search Bar -->
 		<OperatorSearchBar bind:search />
