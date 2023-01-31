@@ -3,7 +3,7 @@
 	export let speedRating: number;
 </script>
 
-<div class="flex justify-evenly">
+<div class="flex gap-14">
 	<div class="flex flex-col items-center gap-2">
 		<h2 class="uppercase font-light">Armor</h2>
 		<div class="flex gap-2">
