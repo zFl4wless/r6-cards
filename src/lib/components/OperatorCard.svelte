@@ -42,7 +42,7 @@
 		height={65}
 	/>
 
-	<div class="mt-40">
+	<div class="mt-40 mx-auto">
 		<h1 class="text-2xl font-bold tracking-wide">{titleCaseWord(name)}</h1>
 		<Badge color={'bg-' + type} label={type} />
 

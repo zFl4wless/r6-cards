@@ -52,7 +52,7 @@
 				<Badge color="bg-danger" label={selectedOperator.organization} />
 			</div>
 
-			<div class="w-full">
+			<div>
 				<h2 class="font-semibold text-lg mb-1">Statistics</h2>
 				<OperatorStatistics
 					armorRating={selectedOperator.armor_rating}
