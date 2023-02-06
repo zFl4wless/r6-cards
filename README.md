@@ -2,6 +2,9 @@
 
 Just a showcase project that lists operator information from the game Rainbow Six Siege.
 
+## 🔴 View the live version
+[Here](https://r6-cards.vercel.app)
+
 ## 🔍 Tech Stack
 
 -   TypeScript
