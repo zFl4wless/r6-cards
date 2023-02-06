@@ -20,7 +20,7 @@
 			? operators.filter((operator) => operator.name.toLowerCase().startsWith(search.toLowerCase()))
 			: operators;
 
-	let selectedOperator: Operator;
+	let selectedOperator: Operator | undefined;
 	$: selectedOperator;
 </script>
 

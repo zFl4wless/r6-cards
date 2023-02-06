@@ -11,13 +11,13 @@
 	export let speed_rating: number;
 	export let type: string;
 	export let organization: string;
-	export let selectedOperator: Operator;
+	export let selectedOperator: Operator | undefined;
 </script>
 
 <button
 	class="relative bg-card-background py-8 flex flex-col text-center justify-center w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33%-1rem)] rounded-b-lg cursor-pointer"
-	on:click={() =>
-		(selectedOperator = {
+	on:click={() => {
+		selectedOperator = {
 			name,
 			badge,
 			image,
@@ -26,7 +26,8 @@
 			speed_rating,
 			type,
 			organization
-		})}
+		};
+	}}
 >
 	<img
 		class="absolute -top-20 left-1/2 -translate-x-1/2"
