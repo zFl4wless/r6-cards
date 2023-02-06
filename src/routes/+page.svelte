@@ -15,9 +15,10 @@
 	});
 
 	let search: string = '';
-	$: filteredOperators = search
-		? operators.filter((operator) => operator.name.toLowerCase().startsWith(search.toLowerCase()))
-		: operators;
+	$: filteredOperators =
+		search && search.length > 0
+			? operators.filter((operator) => operator.name.toLowerCase().startsWith(search.toLowerCase()))
+			: operators;
 
 	let selectedOperator: Operator;
 	$: selectedOperator;
@@ -39,5 +40,5 @@
 	</div>
 
 	<!-- Selected Operator -->
-	<SelectedOperator {selectedOperator} />
+	<SelectedOperator bind:selectedOperator />
 </main>
