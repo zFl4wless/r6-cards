@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { titleCaseWord } from '$lib/utils/title-case-word';
 	import { X } from 'lucide-svelte';
+	import { fade, slide } from 'svelte/transition';
 	import Badge from './Badge.svelte';
 	import OperatorStatistics from './OperatorStatistics.svelte';
 
@@ -10,6 +11,7 @@
 {#if selectedOperator}
 	<div
 		class="flex xl:hidden flex-col text-center justify-center fixed top-0 left-0 w-full h-full bg-{selectedOperator.type} z-10"
+		transition:fade={{ duration: 250 }}
 	>
 		<button
 			class="absolute top-2 right-2 bg-dark p-1 rounded-md"
@@ -19,7 +21,10 @@
 		</button>
 	</div>
 
-	<div class="fixed bottom-0 left-0 xl:left-auto xl:right-0 xl:mr-6 w-full xl:w-[28.5rem] h-[80vh] rounded-t-lg bg-dark z-20">
+	<div
+		class="fixed bottom-0 left-0 xl:left-auto xl:right-0 xl:mr-6 w-full xl:w-[28.5rem] h-[80vh] rounded-t-lg bg-dark z-20 !overflow-visible"
+		transition:slide={{ duration: 250 }}
+	>
 		<img
 			class="absolute -top-28 left-1/2 -translate-x-1/2"
 			src={selectedOperator.image}
