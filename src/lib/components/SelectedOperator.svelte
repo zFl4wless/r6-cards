@@ -3,7 +3,6 @@
 	import { X } from 'lucide-svelte';
 	import { fade, slide } from 'svelte/transition';
 	import Badge from './Badge.svelte';
-	import LoadingAnimation from './LoadingAnimation.svelte';
 	import OperatorStatistics from './OperatorStatistics.svelte';
 
 	export let selectedOperator: Operator | undefined;
