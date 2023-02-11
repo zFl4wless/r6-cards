@@ -4,7 +4,7 @@
 	export let search: string;
 </script>
 
-<div class="flex bg-dark px-4 py-3 rounded-lg">
+<div class="z-10 sticky top-6 w-full flex bg-dark px-4 py-3 rounded-lg shadow-md">
 	<input
 		class="bg-transparent text-light text-base w-full focus:outline-none"
 		placeholder="Search an Operator"

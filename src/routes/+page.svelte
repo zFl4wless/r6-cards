@@ -25,14 +25,15 @@
 </script>
 
 <main class="m-6">
+	<!-- Splash Screen -->
 	<SplashScreen {showSplashScreen} />
 
-	<div class="xl:mr-[30rem]">
+	<div class="relative xl:mr-[30rem]">
 		<!-- Search Bar -->
 		<OperatorSearchBar bind:search />
 
 		<!-- Operator List -->
-		<div class="flex flex-wrap justify-center gap-x-6 gap-y-28 my-28">
+		<div class="flex flex-wrap justify-start gap-x-6 gap-y-28 my-28">
 			{#each filteredOperators as operator}
 				<OperatorCard {...operator} bind:selectedOperator />
 			{/each}
