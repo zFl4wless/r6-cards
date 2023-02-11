@@ -25,9 +25,10 @@
 </script>
 
 <main class="m-6">
+	<!-- Splash Screen -->
 	<SplashScreen {showSplashScreen} />
 
-	<div class="xl:mr-[30rem]">
+	<div class="relative xl:mr-[30rem]">
 		<!-- Search Bar -->
 		<OperatorSearchBar bind:search />
 
