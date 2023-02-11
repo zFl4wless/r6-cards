@@ -23,7 +23,7 @@
 		</div>
 
 		<div
-			class="fixed bottom-0 left-0 xl:left-auto xl:right-0 xl:mr-6 w-full xl:w-[28.5rem] h-[80vh] rounded-t-lg bg-dark z-20 !overflow-visible"
+			class="fixed bottom-0 left-0 xl:left-auto xl:right-0 xl:mr-6 w-full xl:w-[28.5rem] h-[80vh] rounded-t-lg shadow-md bg-dark z-20 !overflow-visible"
 			transition:slide={{ duration: 300 }}
 		>
 			<img

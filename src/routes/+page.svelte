@@ -33,7 +33,7 @@
 		<OperatorSearchBar bind:search />
 
 		<!-- Operator List -->
-		<div class="flex flex-wrap justify-center gap-x-6 gap-y-28 my-28">
+		<div class="flex flex-wrap justify-start gap-x-6 gap-y-28 my-28">
 			{#each filteredOperators as operator}
 				<OperatorCard {...operator} bind:selectedOperator />
 			{/each}
