@@ -38,6 +38,10 @@
 				<OperatorCard {...operator} bind:selectedOperator />
 			{/each}
 		</div>
+
+		<footer class="text-center text-light-gray">
+			Made with 💙 by <a class="underline" href="https://fl4wless.de">Fl4wless</a>
+		</footer>
 	</div>
 
 	<!-- Selected Operator -->
