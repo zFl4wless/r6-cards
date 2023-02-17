@@ -11,11 +11,6 @@
 	body {
 		color: theme('colors.light');
 		background-color: theme('colors.blue-gray');
-		background-image: url('rainbow-logo-bg.png');
-		background-repeat: no-repeat;
-		background-size: 22rem;
-		background-position-x: -65px;
-		background-position-y: 20px;
 	}
 }
 

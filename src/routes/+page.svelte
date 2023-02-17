@@ -24,25 +24,34 @@
 	$: selectedOperator;
 </script>
 
-<main class="m-6">
+<main class="mx-6 flex min-h-screen">
 	<!-- Splash Screen -->
 	<SplashScreen {showSplashScreen} />
 
-	<div class="relative xl:mr-[30rem]">
+	<div class="relative xl:mr-[30rem] content">
 		<!-- Search Bar -->
 		<OperatorSearchBar bind:search />
 
 		<!-- Operator List -->
-		<div class="flex flex-wrap justify-start gap-x-6 gap-y-28 my-28">
+		<div class="flex flex-wrap justify-start gap-x-6 gap-y-28 my-24">
 			{#each filteredOperators as operator}
 				<OperatorCard {...operator} bind:selectedOperator />
 			{/each}
 		</div>
 
-		<footer class="text-center text-light-gray">
+		<!-- Footer -->
+		<footer class="text-center text-light-gray pb-20">
 			Made with 💙 by <a class="underline" href="https://fl4wless.de">Fl4wless</a>
 		</footer>
 	</div>
+	<style>
+		.content {
+			display: grid;
+			grid-template-rows: min-content 1fr min-content;
+			min-height: 100%;
+			width: 100%;
+		}
+	</style>
 
 	<!-- Selected Operator -->
 	<SelectedOperator bind:selectedOperator />
