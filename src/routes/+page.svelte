@@ -24,7 +24,7 @@
 	$: selectedOperator;
 </script>
 
-<main class="m-6">
+<main class="m-6 mt-0">
 	<!-- Splash Screen -->
 	<SplashScreen {showSplashScreen} />
 
@@ -39,6 +39,7 @@
 			{/each}
 		</div>
 
+		<!-- Footer -->
 		<footer class="text-center text-light-gray">
 			Made with 💙 by <a class="underline" href="https://fl4wless.de">Fl4wless</a>
 		</footer>
