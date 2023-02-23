@@ -19,6 +19,13 @@
 			: operators;
 
 	let selectedOperator: Operator | undefined;
+	onMount(() => {
+		window.addEventListener('keydown', (event) => {
+			if (event.key === 'Escape') {
+				selectedOperator = undefined;
+			}
+		});
+	});
 </script>
 
 <main class="mx-6 flex min-h-screen">
