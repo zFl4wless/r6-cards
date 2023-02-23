@@ -7,9 +7,7 @@
 	import SplashScreen from '$lib/components/SplashScreen.svelte';
 	import { onMount } from 'svelte';
 
-	let showSplashScreen: boolean;
-	$: showSplashScreen = true;
-
+	let showSplashScreen: boolean = true;
 	onMount(() => {
 		showSplashScreen = false;
 	});
@@ -21,7 +19,6 @@
 			: operators;
 
 	let selectedOperator: Operator | undefined;
-	$: selectedOperator;
 </script>
 
 <main class="mx-6 flex min-h-screen">
