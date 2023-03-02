@@ -48,6 +48,14 @@
 			Made with 💙 by <a class="underline" href="https://fl4wless.de">Fl4wless</a>
 		</footer>
 	</div>
+	<style>
+		.content {
+			display: grid;
+			grid-template-rows: min-content 1fr min-content;
+			min-height: 100%;
+			width: 100%;
+		}
+	</style>
 
 	<!-- Selected Operator -->
 	<SelectedOperator bind:selectedOperator />
