@@ -15,7 +15,7 @@
 </script>
 
 <button
-	class="relative bg-card-background py-8 flex flex-col text-center justify-center w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33%-1rem)] rounded-b-lg shadow-md cursor-pointer group"
+	class="relative bg-card-background py-8 flex flex-col text-center justify-center rounded-b-lg shadow-md cursor-pointer group"
 	on:click={() => {
 		selectedOperator = {
 			name,

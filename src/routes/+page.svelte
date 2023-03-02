@@ -32,12 +32,12 @@
 	<!-- Splash Screen -->
 	<SplashScreen {showSplashScreen} />
 
-	<div class="relative xl:mr-[30rem] content">
+	<div class="content relative xl:mr-[30rem]">
 		<!-- Search Bar -->
 		<OperatorSearchBar bind:search />
 
 		<!-- Operator List -->
-		<div class="flex flex-wrap justify-start gap-x-6 gap-y-28 my-24">
+		<div class="operator-list gap-x-6 gap-y-28 my-24">
 			{#each filteredOperators as operator}
 				<OperatorCard {...operator} bind:selectedOperator />
 			{/each}
@@ -59,4 +59,20 @@
 
 	<!-- Selected Operator -->
 	<SelectedOperator bind:selectedOperator />
+
+	<!-- Custom Styling -->
+	<style>
+		.content {
+			display: grid;
+			grid-template-rows: min-content 1fr min-content;
+			min-height: 100%content;
+			width: 100%;
+		}
+
+		.operator-list {
+			display: grid;
+			gap: 8rem 2rem;
+			grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+		}
+	</style>
 </main>
