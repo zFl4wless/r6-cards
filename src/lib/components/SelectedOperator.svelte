@@ -41,7 +41,7 @@
 			/>
 
 			<div
-				class="mt-40 pb-52 px-6 h-full flex flex-col items-center text-center gap-10 overflow-y-scroll"
+				class="mt-40 pb-52 px-6 h-full flex flex-col items-center text-center gap-10 overflow-y-auto"
 			>
 				<div>
 					<h1 class="text-2xl font-bold tracking-wide">{titleCaseWord(selectedOperator.name)}</h1>
