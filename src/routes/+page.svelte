@@ -1,6 +1,6 @@
 <script lang="ts">
 	import '../app.css';
-	import { operators } from '../lib/data/operators';
+	import { operators } from '$lib/data/operators';
 	import OperatorCard from '../lib/components/OperatorCard.svelte';
 	import OperatorSearchBar from '$lib/components/OperatorSearchBar.svelte';
 	import SelectedOperator from '$lib/components/SelectedOperator.svelte';
@@ -48,31 +48,23 @@
 			Made with 💙 by <a class="underline" href="https://fl4wless.de">Fl4wless</a>
 		</footer>
 	</div>
-	<style>
-		.content {
-			display: grid;
-			grid-template-rows: min-content 1fr min-content;
-			min-height: 100%;
-			width: 100%;
-		}
-	</style>
 
 	<!-- Selected Operator -->
 	<SelectedOperator bind:selectedOperator />
-
-	<!-- Custom Styling -->
-	<style>
-		.content {
-			display: grid;
-			grid-template-rows: min-content 1fr min-content;
-			min-height: 100%content;
-			width: 100%;
-		}
-
-		.operator-list {
-			display: grid;
-			gap: 8rem 2rem;
-			grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
-		}
-	</style>
 </main>
+
+<!-- Custom Styling -->
+<style>
+	.content {
+		display: grid;
+		grid-template-rows: min-content 1fr min-content;
+		min-height: 100%;
+		width: 100%;
+	}
+
+	.operator-list {
+		display: grid;
+		gap: 8rem 2rem;
+		grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+	}
+</style>
